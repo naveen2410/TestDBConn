@@ -28,6 +28,9 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String ipaddress() throws Exception {
-        return "Reply: " + welcome;
+    	
+    	String status = new MSSQLConnection().dbConn("sa", "Projects@123");
+    	
+        return "Reply: " + status;
     }
 }
