@@ -29,7 +29,7 @@ public class HomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String ipaddress() throws Exception {
     	
-    	String status = new MSSQLConnection().dbConn("sa", "Projects@123");
+    	String status = new MysqlCon().dbConn();
     	
         return "Reply: " + status;
     }
