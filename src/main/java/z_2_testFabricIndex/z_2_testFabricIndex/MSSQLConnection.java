@@ -16,7 +16,9 @@ class MysqlCon{
 			while(rs.next())  
 				result = rs.getString(2);  
 			con.close();  
-		}catch(Exception e){ System.out.println(e);}  
+		}catch(Exception e){ 
+			result = e.getMessage();
+			}  
 		
 		return result;
 		
