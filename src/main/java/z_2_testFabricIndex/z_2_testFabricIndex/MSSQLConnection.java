@@ -1,6 +1,6 @@
 package z_2_testFabricIndex.z_2_testFabricIndex;
 
-
+//testmysql1
 
 import java.sql.*;  
 class MysqlCon{  
@@ -9,7 +9,7 @@ class MysqlCon{
 		try{  
 			Class.forName("com.mysql.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(  
-					"jdbc:mysql://localhost:3306/qwerty","qwerty","qwerty");  
+					"jdbc:mysql://localhost:3306/testmysql1","testmysql1","testmysql1");  
 			//here sonoo is database name, root is username and password  
 			Statement stmt=con.createStatement();  
 			ResultSet rs=stmt.executeQuery("select database()");  
