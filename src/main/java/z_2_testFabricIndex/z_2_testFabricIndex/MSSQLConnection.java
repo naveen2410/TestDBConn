@@ -9,7 +9,7 @@ class MysqlCon{
 		try{  
 			Class.forName("com.mysql.jdbc.Driver");  
 			Connection con=DriverManager.getConnection(  
-					"jdbc:mysql://172.30.226.190:3306/testmysql1","testmysql1","testmysql1");  
+					"jdbc:mysql://172.30.226.190:3306/sampledb","testmysql1","testmysql1");  
 			//here sonoo is database name, root is username and password  
 			Statement stmt=con.createStatement();  
 			ResultSet rs=stmt.executeQuery("select database()");  
